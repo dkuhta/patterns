@@ -6,7 +6,7 @@ package com.patterns.prototype;
  * @author Denis Kuhta
  * @since JDK1.8
  */
-public interface Prototype {
+public interface Prototype extends Cloneable {
 
-    Prototype doClone() throws CloneNotSupportedException;
+    Prototype clone() throws CloneNotSupportedException;
 }

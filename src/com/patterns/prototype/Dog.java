@@ -14,9 +14,12 @@ public class Dog implements Prototype {
         this.name = field;
     }
 
+    public String getName() {
+        return name;
+    }
 
     @Override
-    public Prototype doClone() throws CloneNotSupportedException {
+    public Dog clone() throws CloneNotSupportedException {
         return new Dog(name);
     }
 }

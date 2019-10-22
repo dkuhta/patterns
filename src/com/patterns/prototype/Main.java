@@ -9,8 +9,9 @@ package com.patterns.prototype;
 public class Main {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Dog dog = new Dog("slkdvlksd");
-        Prototype prototype = dog.doClone();
+        Dog dog = new Dog("Vasya");
+        Dog prototype = dog.clone();
         System.out.println(dog == prototype);
+        System.out.println(dog.getName().endsWith(prototype.getName()));
     }
 }
